@@ -45,6 +45,7 @@ public class UniqueBeforeNotifyTest {
     public void tearDown() throws Exception {
         callbackCount = 0;
         Async.cancelTasks();
+        client.getOrientationListener().disable();
     }
 
     @Test
